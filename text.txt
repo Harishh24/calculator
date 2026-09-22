@@ -7,17 +7,21 @@
     after changing that if needed add any files ex: creating a new file(test.txt) in the git folder after cloning inside that folder
 
 
->cmd:  git status    --->(If your current local branch is linked to a remote branch,
-                          then git status will tell you if your local branch is behind or ahead by any commits)
+>cmd:  git status           --->(If your current local branch is linked to a remote branch,
+                            then git status will tell you if your local branch is behind or ahead by any commits)
 
->cmd:  git.add text.txt   ---> (text.txt is just a file name) here add dosen't mean just adding that file
-                          ---> It means it adds the uppdates whatever made in that file weather deeted or created or updated
+>cmd:  git.add text.txt     ---> (text.txt is just a file name) here add dosen't mean just adding that file
+                            It means it adds the uppdates whatever made in that file weather deeted or created or updated
 
->cmd:  git status    ----> gives the stage status
+>cmd:  git status           ----> gives the stage status
 
 >cmd:  git commit -m "(any message need to pass here its compulsaruy)"  --> after this also the new file wont be reflected to the git repository
                                                                             to make it visible we need to push that to git
-                        this makes that file to save that to the local git
+                                                                            this makes that file to save that to the local git
 
->cmd:  git push origin main  --> It pushes to that git repository , it makes the file visible in the git repo
-                             --> origin (this is the link we used to get that folder in 1st cmd)
+>cmd:  git push origin main  ---> It pushes to that git repository , it makes the file visible in the git repo
+                             ---> origin (this is the link we used to get that folder in 1st cmd)
+
+
+>cmd:  git pull              ----> Its is like if we updated or created in that particular repo using github from that we need to fetch
+                             what are the updates made so that git pull is used
