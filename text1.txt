@@ -1,0 +1,6 @@
+4 stsges of git
+
+untracked               : It means that git wont track (the file just created)
+Unmodified / Modified   : A file that git tracks (you just edited a trackred file)
+Stagged                 : after using the >cmd:git add ()
+Comitted                : the final stage (it will push the file to the git repo)
