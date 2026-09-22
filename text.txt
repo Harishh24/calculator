@@ -1,42 +1,67 @@
 
 #create the file/Folder in desktop
 #open that in any ide
->cmd:  git clone (that link)  --> takes that git repository to to work
->cmd:  cd directory_name(navigate to that directory)
+1. >cmd:  git clone (that link)  --> takes that git repository to to work
+2. >cmd:  cd directory_name(navigate to that directory)
 
     after changing that if needed add any files ex: creating a new file(test.txt) in the git folder after cloning inside that folder
 
 
->cmd:  git status           --->(If your current local branch is linked to a remote branch,
+3. >cmd:  git status           --->(If your current local branch is linked to a remote branch,
                             then git status will tell you if your local branch is behind or ahead by any commits)
 
->cmd:  git add text.txt     ---> (text.txt is just a file name) here add dosen't mean just adding that file
+4. >cmd:  git add text.txt     ---> (text.txt is just a file name) here add dosen't mean just adding that file
                             It means it adds the uppdates whatever made in that file weather deeted or created or updated
 
->cmd:  git status           ----> gives the stage status
+5. >cmd:  git status           ----> gives the stage status
 
->cmd:  git commit -m "(any message need to pass here its compulsaruy)"  --> after this also the new file wont be reflected to the git repository
+6. >cmd:  git commit -m "(any message need to pass here its compulsaruy)"  --> after this also the new file wont be reflected to the git repository
                                                                             to make it visible we need to push that to git
                                                                             this makes that file to save that to the local git
 
->cmd:  git push origin main  ---> It pushes to that git repository , it makes the file visible in the git repo
+7. >cmd:  git push origin main  ---> It pushes to that git repository , it makes the file visible in the git repo
                              ---> origin (this is the link we used to get that folder in 1st cmd)
 
 
 
 
-
->cmd:  git pull              ----> Its is like if we updated or created in that partitcular repo using github from that we need to fetch
+8. >cmd:  git pull              ----> Its is like if we updated or created in that partitcular repo using github from that we need to fetch
                              what are the updates made so that git pull is used
 
 
->cmd:  git init              ---> It is used to as if I created a new repo in my local system and then i need to add  the .git file to that directory
+9. >cmd:  git init              ---> It is used to as if I created a new repo in my local system and then i need to add  the .git file to that directory
                              for that git init is used
                              That .git file is used as a bridge between the local git workspace and the remote web github
 
 
 
->cmd: git add .              ---> This is used to add all the files and moves to staging area
+10. >cmd: git add .              ---> This is used to add all the files and moves to staging area
                              (In other words : if we add or make changes for  100 files we cannot add one by oone by adding their names like
                               (git add text.txt) instead of this we can use just (git add .) this will add all the modified files together at once )
 
+
+11. >cmd: git remote add origin and (link) ---> this cmd is used to link the newly created git repo in local device
+                                        To do that
+                                        --> 1. we need to create the repo in the website after that
+                                        --> 2. copy that link provided in the quick setup
+                                        --> 3. paste that link in this link place in the command
+            In this is a prblm like when we try to pusht this repo to git from local device well get an error because
+            -in previous one the branch is created as main but now it is created as master so that  this (command : git push origin main) won't work
+            to check that use this command
+
+  >cmd: git branch          --> this command will give the op as *master or *main
+
+               -so that we can do 2 alternatives instead of main give master
+               -or try this command
+  >cmd: git branch -M main  --> this converts the master to main
+
+
+
+HOW BRANCH WORKS
+
+1. >cmd: git branch -a          --> used to know how many branches are there and what are that
+
+        AFTER CREATING A NEW BRANCH IN GIT-HUB HERE IT WONT VISIBLE AUTOMATICALL SO THAT USE (git pull) then it will display all the branches available
+
+ 2. >cmd: git checkut gitbranch1 ---> It is used to switch between branches in the same repo. and  (gitbranch1) is the branch name
+                                      now i have switched from main branch to the gitbranch1
