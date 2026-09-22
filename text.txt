@@ -23,5 +23,13 @@
                              ---> origin (this is the link we used to get that folder in 1st cmd)
 
 
->cmd:  git pull              ----> Its is like if we updated or created in that particular repo using github from that we need to fetch
+
+
+
+>cmd:  git pull              ----> Its is like if we updated or created in that partitcular repo using github from that we need to fetch
                              what are the updates made so that git pull is used
+
+
+>cmd:  git init              ---> It is used to as if I created a new repo in my local system and then i need to add  the .git file to that directory
+                             for that git init is used
+                             That .git file is used as a bridge between the local git workspace and the remote web github
