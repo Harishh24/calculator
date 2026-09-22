@@ -10,7 +10,7 @@
 >cmd:  git status           --->(If your current local branch is linked to a remote branch,
                             then git status will tell you if your local branch is behind or ahead by any commits)
 
->cmd:  git.add text.txt     ---> (text.txt is just a file name) here add dosen't mean just adding that file
+>cmd:  git add text.txt     ---> (text.txt is just a file name) here add dosen't mean just adding that file
                             It means it adds the uppdates whatever made in that file weather deeted or created or updated
 
 >cmd:  git status           ----> gives the stage status
@@ -33,3 +33,10 @@
 >cmd:  git init              ---> It is used to as if I created a new repo in my local system and then i need to add  the .git file to that directory
                              for that git init is used
                              That .git file is used as a bridge between the local git workspace and the remote web github
+
+
+
+>cmd: git add .              ---> This is used to add all the files and moves to staging area
+                             (In other words : if we add or make changes for  100 files we cannot add one by oone by adding their names like
+                              (git add text.txt) instead of this we can use just (git add .) this will add all the modified files together at once )
+
