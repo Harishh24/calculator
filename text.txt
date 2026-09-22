@@ -29,6 +29,7 @@
                              what are the updates made so that git pull is used
 
 
+
 9. >cmd:  git init              ---> It is used to as if I created a new repo in my local system and then i need to add  the .git file to that directory
                              for that git init is used
                              That .git file is used as a bridge between the local git workspace and the remote web github
@@ -38,6 +39,8 @@
 10. >cmd: git add .              ---> This is used to add all the files and moves to staging area
                              (In other words : if we add or make changes for  100 files we cannot add one by oone by adding their names like
                               (git add text.txt) instead of this we can use just (git add .) this will add all the modified files together at once )
+
+
 
 
 11. >cmd: git remote add origin and (link) ---> this cmd is used to link the newly created git repo in local device
@@ -57,11 +60,17 @@
 
 
 
-HOW BRANCH WORKS
+HOW BRANCH WORKS AND WHAT IS THE USE OF BRANCH
+        IT IS USED TO CREATE THE SUB BRACNCES TO WORK INDIVUDALLY
+   (In other words : Cosider 5 members in a group in that if 5 members want to work together at a time means they wonty work in the main original branch instad they
+     create the saperete saparete brach each and they work and later they add that to the main branch)
+
 
 1. >cmd: git branch -a          --> used to know how many branches are there and what are that
 
         AFTER CREATING A NEW BRANCH IN GIT-HUB HERE IT WONT VISIBLE AUTOMATICALL SO THAT USE (git pull) then it will display all the branches available
 
- 2. >cmd: git checkut gitbranch1 ---> It is used to switch between branches in the same repo. and  (gitbranch1) is the branch name
+2. >cmd: git checkut gitbranch1 ---> It is used to switch between branches in the same repo. and  (gitbranch1) is the branch name
                                       now i have switched from main branch to the gitbranch1
+
+3. >cmd:
