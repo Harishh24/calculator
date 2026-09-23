@@ -73,4 +73,15 @@ HOW BRANCH WORKS AND WHAT IS THE USE OF BRANCH
 2. >cmd: git checkut gitbranch1 ---> It is used to switch between branches in the same repo. and  (gitbranch1) is the branch name
                                       now i have switched from main branch to the gitbranch1
 
-3. >cmd:
+        now check the difference from 2 branches that (main and the gitbranch1)
+        so that chech you are in which branch use >cmd: git branch -a or just checkout like >cmd: git checkout main now you are in main branch
+
+3. >cmd: git diff gitbranch1    ---> This will show what are the difference are there in the main and the another repository created
+                                      (like what are the files changed/updated/added)
+
+4. >cmd: git merge gitbranch1   ---> which one you are going to merge (Here, Iam in main branch from main iam merging the gitbranch1 )
+
+
+5. >cmd: git branch newbranch2  ---> to create new branch (Here newbranch2 is the branch name)
+
+
