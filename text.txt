@@ -85,3 +85,7 @@ HOW BRANCH WORKS AND WHAT IS THE USE OF BRANCH
 5. >cmd: git branch newbranch2  ---> to create new branch (Here newbranch2 is the branch name)
 
 
+CONFLICT FILE : IF TWO MEMBERS TRY TO CHANGE THE FILE AT THE SAME TIME THE GIT WILL CONFUSE(    FOR THAT WE NEED TO SOLVE MANUALLY )
+               -->FOR IF ONE MAIN BRANCH GETS CHANGES FROM 2 OTHER BRANCH at that time git will show the message that (This branch has Conflicts that must be resoved)
+                    for that clich resolve confllicts and then resolve it then click the mark as resolved and click merge pull req in that
+
