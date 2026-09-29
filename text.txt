@@ -92,19 +92,46 @@ CONFLICT FILE : IF TWO MEMBERS TRY TO CHANGE THE FILE AT THE SAME TIME THE GIT W
 
 GIT CHECKOUT AND GIT SWITCH ARE THE SAME THING BOTH ARE USED TO CHANGE THE BRANCHES(SWITCHING BETWEEN THE BRANCHES )
 --> one important to be noted here that is when we use the
-    GIT CHECKOUT (new branch name) ---> it directly creates the new branch but it dosent switch to the new branch
-                                        to switch you need to use again that branch name like(git branch branch1) now it moves to the branch1
-
-                 { In other words
-                    1st command
-                    >CMD: GIT BRANCH  BRANCH1 --> ONLY CREATES THE BRANCH IF IT IS NOT PRESENT
-                                                  IF IT PRESENT IT SWITCHES
-                    >CMD: GIT SWITCH BRANCH1  --> IT JUST SWITCHES TO THE BRANCH1
-                                                  TO CREATE AND SWITCH  USE ( GIT SWITCH -C BRANCH1)
-
-                    >CMD: GIT CHECKOUT ALSO DOES THE SIMILAR KIND
+    GIT CHECKOUT (new branch name) ---> it directly switches to the branch but it dosent create the new branch
+      |                                  to switch you need to use again that branch name like(git branch branch1) now it moves to the branch1
+      |
+      |          { In other words
+      |             1st command
+      |             >CMD: GIT BRANCH  BRANCH1 --> ONLY CREATES THE BRANCH IF IT IS NOT PRESENT
+      |                                            IF IT PRESENT IT SWITCHES
+      |              >CMD: GIT SWITCH BRANCH1  --> IT JUST SWITCHES TO THE BRANCH1
+      |                                            TO CREATE AND SWITCH  USE ( GIT SWITCH -C BRANCH1)
+      |
+      --------------->CMD: GIT CHECKOUT ALSO DOES THE SIMILAR KIND
                           GIT CHECKOUT BRANCH1 -->MOVES TO THE BRANCH1 IF IT EXISTS
                           GIT CHECKOUT -B (NEW BRANCH NAME) ---> CREATES THE NEW BRANCH AND MOVES TO NEW BRANCH
 
+
+
+
+
+GIT CHECKOUT AND GIT SWITCH
+
+Both can be used to switch between branches.
+
+1. git branch branch1
+   → Creates branch1
+   → Does NOT switch to branch1
+
+2. git switch branch1
+   → Switches to an EXISTING branch1
+   → Does NOT create a new branch
+
+3. git switch -c branch1
+   → Creates branch1
+   → Switches to branch1
+
+4. git checkout branch1
+   → Switches to an EXISTING branch1
+   → Does NOT create a new branch
+
+5. git checkout -b branch1
+   → Creates branch1
+   → Switches to branch1
 
 
